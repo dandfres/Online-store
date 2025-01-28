@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #1b1b1b;
+    font-family: "Outfit";
+}
+
+header {
+    background-color: #1b1b1b;
+    padding: 0 20px 0 20px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav img {
+    height: 40px;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    margin: 20px;
+    list-style: none;
+}
+
+.product-picture {
+    height: 700px;
+    background-image: url("images/ROG_Strix_G16.png");
+    background-size: cover;
+    background-position: top;
+}
+
+.degraded {
+    color: white;
+    font-size: 60px;
+    font-weight: 500;
+    font-family: "Outfit";
+    height: 100%;
+    background-image: radial-gradient(ellipse, transparent, black);
+    padding: 30px;
+}
+
+.product-name {
+    display: flex;
+    justify-content: center;
+}
+
+.options {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    color: white;
+    background-color: #1d5592;
+    border: none;
+    font-size: 20px;
+    font-family: "Outfit";
+    margin: 10px;
+    padding: 10px 16px 10px 16px;
+    border-radius: 40px;
+}
+
+section {
+    color: white;
+    padding: 50px 20% 50px 20%;
+    font-size: x-large;
+    text-align: justify;
+}
+
+footer {
+    text-align: end;
+    color: lightblue;
+    margin: 40px 20% 40px 20%;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+a:hover {
+    color: goldenrod;
+}
