@@ -5,13 +5,14 @@
 }
 
 body{
-    background-color: #1b1b1b;
     font-family: "Outfit";
+    background-color: #73D2DE;
 }
 
 header {
-    background-color: #1b1b1b;
+    background-color: #D81159;
     padding: 0 20px 0 20px;
+    color: white;
 }
 
 nav {
@@ -35,9 +36,9 @@ nav ul li {
 
 .product-picture {
     height: 700px;
-    background-image: url("images/ROG_Strix_G16.png");
+    background-image: url("https://i.ytimg.com/vi/S6sqR5zh-cc/maxresdefault.jpg");
     background-size: cover;
-    background-position: top;
+    background-position: center;
 }
 
 .degraded {
@@ -46,8 +47,11 @@ nav ul li {
     font-weight: 500;
     font-family: "Outfit";
     height: 100%;
-    background-image: radial-gradient(ellipse, transparent, black);
+    background-image: linear-gradient(transparent 15%, black);
     padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }
 
 .product-name {
@@ -61,33 +65,67 @@ nav ul li {
 }
 
 button {
-    color: white;
-    background-color: #1d5592;
-    border: none;
     font-size: 20px;
     font-family: "Outfit";
     margin: 10px;
     padding: 10px 16px 10px 16px;
     border-radius: 40px;
+    cursor: pointer;
+}
+
+.info button {
+    border: 4px solid #73D2DE;
+    color: #73D2DE;
+    background-color: transparent;
+}
+
+.buy button{
+    border: 2px solid #FBB13C;
+    background-color: #FBB13C;
+    color: white;
 }
 
 section {
-    color: white;
-    padding: 50px 20% 50px 20%;
+    border-radius: 0 0 40px 40px ;
+    margin: 0 220px 0 220px ;
     font-size: x-large;
     text-align: justify;
+    background-color: white;
+}
+
+.description {
+    padding: 100px;
+}
+
+.description ul li {
+    display: block;
+    padding: 20px;
+}
+
+.description ul li img {
+    width: 300px;
+    padding: 20px;
 }
 
 footer {
     text-align: end;
-    color: lightblue;
+    color: #D81159;
     margin: 40px 20% 40px 20%;
+}
+
+ul {
+    padding: 10px 80px 10px 80px;
 }
 
 a {
     text-decoration: none;
     color: white;
 }
+
+footer a {
+    color: black;
+}
+
 a:hover {
     color: goldenrod;
 }
