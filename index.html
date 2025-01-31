@@ -68,13 +68,32 @@
         <p>Code by <a href="https://github.com/dandfres" target="_blank">Sebastian Durand</a></p>
     </footer>
     <script>
-        let name = prompt("Ingresa tu nombre");
-        let age = prompt("Ingresa tu edad");
-        if (age < 18) {
-            alert("Bienvenido " + name + " puedes pasar.")
+        const initialAmount = parseInt(prompt("Cuanto dinero posees en tu cuenta?"));
+        const operation = confirm("Presiona aceptar para abonar dinero a tu cuenta o cancelar para retirar.");
+        let totalAmount;
+
+        if (operation) {
+            const deposit = parseInt(prompt("Cuanto dinero deseas abonar?"));
+            if (deposit > 0) {
+                totalAmount = initialAmount + deposit;
+            } else {
+                alert("NO PUEDES ABONAR UNA CANTIDAD NEGATIVA!");
+                totalAmount = initialAmount;
+            }
         } else {
-            alert("Lo siento " + name + " no puedes ingresar.")
+            const withdraw = parseInt(prompt("Cuanto dinero deseas retirar?"));
+            if (withdraw > initialAmount) {
+                alert("No puedes retirar más dinero del que tienes en tu cuenta");
+                totalAmount = initialAmount;
+            } else if (withdraw < 0) {
+                alert("NO PUEDES RETIRAR UNA CANITDAD NEGATIVA.!");
+                totalAmount = initialAmount;
+            } else {
+                totalAmount = initialAmount - withdraw;
+            }
         }
+
+        alert("Tu saldo final es de: " + totalAmount);
     </script>
 </body>
 </html>
